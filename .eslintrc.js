@@ -23,6 +23,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'arrow-body-style': 0,
     'react/prop-types': 0,
+    '@typescript-eslint/no-empty-function': 0,
     'no-use-before-define': 0,
     'import/extensions': 0,
     'react/react-in-jsx-scope': 0,

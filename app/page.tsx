@@ -1,10 +1,15 @@
-import { fetchFromAPI } from '@lib/config';
 import Home from '@components/Home';
+import { fetchFromAPI } from '@lib/config';
+import ClientWrapper from '@components/ClientWrapper';
 
 const Page = async () => {
-  // const data = await fetchFromAPI('/movie/upcoming');
+  const appData = await fetchFromAPI('/apps');
 
-  return <Home data={null} />;
+  return (
+    <ClientWrapper>
+      <Home data={appData} />
+    </ClientWrapper>
+  );
 };
 
 export default Page;

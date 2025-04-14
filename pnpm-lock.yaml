@@ -5,15 +5,27 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@rms-forge/ui':
-    specifier: 2.3.0
-    version: 2.3.0(react@19.1.0)
   '@rms-forge/ui-design-tokens':
-    specifier: 2.3.0
-    version: 2.3.0
+    specifier: 3.0.0
+    version: 3.0.0
+  '@rms-forge/ui-footer':
+    specifier: 2.5.2
+    version: 2.5.2(react@19.1.0)
+  '@rms-forge/ui-form':
+    specifier: 3.1.2
+    version: 3.1.2(react@19.1.0)
+  '@rms-forge/ui-header':
+    specifier: 2.3.1
+    version: 2.3.1(react@19.1.0)
+  '@rms-forge/ui-icons':
+    specifier: 2.9.0
+    version: 2.9.0(react@19.1.0)
   '@rms-forge/ui-text':
-    specifier: 2.4.0
-    version: 2.4.0(react@19.1.0)
+    specifier: 2.4.1
+    version: 2.4.1(react@19.1.0)
+  '@rms-forge/ui-toast':
+    specifier: 2.3.1
+    version: 2.3.1(react@19.1.0)
   '@types/node':
     specifier: ^20.17.30
     version: 20.17.30
@@ -1061,16 +1073,159 @@ packages:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  /@rms-forge/ui-design-tokens@2.3.0:
-    resolution: {integrity: sha512-2a5RpxkAd/Hd3pXTiCVXThDO8F4/yQyD/VoI2Wn9X0ZB/uFCfjN94YPYN0Bpkv+aASr7PNaxq/21jYA60Ai8Sw==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-design-tokens/2.3.0/4994832de3f7275357d54e3b2ce91a07cb9ad40e}
-    dev: false
-
-  /@rms-forge/ui-text@2.4.0(react@19.1.0):
-    resolution: {integrity: sha512-bge2nD9JF0JqPeWSHwmMw8Wcclr6HJuf7StboV9luqnDNOUiFVuZ6dh+gHcgejjuQCamFaCjK3KoXRF3v+0boA==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-text/2.4.0/f2d8136cdfd30ad63709b44143fa0df98309027f}
+  /@rms-forge/ui-button@2.2.0(react@19.1.0):
+    resolution: {integrity: sha512-K/y2tWgOXt9D4CPFW5lLGlqjvwkhLUqKjUu4tICxHoJtejte7MdR/qGc7gkewiI1cabqnmzT+lbW2KJNEgjCRA==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-button/2.2.0/5b77a4ca194f4991b4c0f0eb0018ba6507602e74}
     peerDependencies:
       react: ^17.0.0 || ^18.2.0
     dependencies:
-      '@rms-forge/ui-design-tokens': 2.3.0
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-checkbox@2.2.0(react@19.1.0):
+    resolution: {integrity: sha512-/huaoEnlNZQ4At2kcn0OlX5RJogcqCVPej+mGzufKQ4LUFXJDRUuG9YVBiJDBR+wfyCKwcrFT414MGAwggwFRw==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-checkbox/2.2.0/17bb1c03e3397c0bd3fae593bdbdb45f6506b7e9}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-container@2.2.1(react@19.1.0):
+    resolution: {integrity: sha512-rqJoL8Wr/9qGzct48o8cyPV05gpWZ1yWCDIds8+aOxKdbU5tuBpVQWTni+vPPKyWbr0beelYGM1Mq6PrUJATJA==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-container/2.2.1/ed17ab8e71d478c6b3feb22852c74b049abdb14e}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-design-tokens': 3.0.0
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-controlled-components@2.10.2(react@19.1.0):
+    resolution: {integrity: sha512-/aCAaQUIY7PfdaI71CJjWeozNbx4fnQktbrOdY7GlZ8Ya/8B8v1eT6LwZgOMEgVzJ8nF0RQGm86FNsFAW13Kmg==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-controlled-components/2.10.2/a39edab4aa087ccc34eeb2cbbdb9f4387a58cd47}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-checkbox': 2.2.0(react@19.1.0)
+      '@rms-forge/ui-icons': 2.9.0(react@19.1.0)
+      '@rms-forge/ui-portal': 2.3.0(react@19.1.0)
+      '@rms-forge/ui-text': 2.4.1(react@19.1.0)
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-design-tokens@3.0.0:
+    resolution: {integrity: sha512-WmUGjtTNTP/TcCGZuv1zovlA3IR5WhKWaXTFOGm605HZGN3b4kJ5kves+ofjoryXjvu3WrRhQUIz7SQvUkXoIA==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-design-tokens/3.0.0/b6082f0aeeb2c0b0b96aea888d049b2d65a5982f}
+    dev: false
+
+  /@rms-forge/ui-divider@2.2.0(react@19.1.0):
+    resolution: {integrity: sha512-nrNybC4KuU9L0tn5RhLNzgp1ykUOl70ptZjpyrjCZ3xCSqzLywC1HHfUm+TyICGgGEnxZRu3SQQEvoINeduokA==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-divider/2.2.0/d4b6b85c7a4c12f9294463e4c35b0d8767617c48}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-footer@2.5.2(react@19.1.0):
+    resolution: {integrity: sha512-pelZoZHsS9sDml6fBg48K1ch2bP1hpS2Z1r9A/cSw61EdpqmApGEipHoEsrQQ38C94kEvj7ISU7r/qI1IK12Bg==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-footer/2.5.2/e1ccf02d7d8df4d3e2dcc948a4501b1d9650c806}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-container': 2.2.1(react@19.1.0)
+      '@rms-forge/ui-design-tokens': 3.0.0
+      '@rms-forge/ui-divider': 2.2.0(react@19.1.0)
+      '@rms-forge/ui-form': 3.1.2(react@19.1.0)
+      '@rms-forge/ui-icons': 2.9.0(react@19.1.0)
+      '@rms-forge/ui-text': 2.4.1(react@19.1.0)
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-form@3.1.2(react@19.1.0):
+    resolution: {integrity: sha512-Ngqc6ctUZoPiXg9BMOqBz0/Y6rz8y3M4ndm6MF5ss8VYG69xARovUE2izpScCJPfQZ12uFNAqWh0pUha+Cz47w==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-form/3.1.2/aa2688df57ef74b334dd4994a439d933c1411d9e}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-button': 2.2.0(react@19.1.0)
+      '@rms-forge/ui-controlled-components': 2.10.2(react@19.1.0)
+      '@rms-forge/ui-design-tokens': 3.0.0
+      '@rms-forge/ui-icons': 2.9.0(react@19.1.0)
+      '@rms-forge/ui-loader': 2.2.0(react@19.1.0)
+      '@rms-forge/ui-text': 2.4.1(react@19.1.0)
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+      react-canvas-confetti: 1.4.0(react@19.1.0)
+    dev: false
+
+  /@rms-forge/ui-header@2.3.1(react@19.1.0):
+    resolution: {integrity: sha512-cyRuPthZsQceRWeNgP3VmxCOO5UmuBe87pduW317lvgLjwdrDQn3bNlWyfNuoDOfmfsWiDPik+EoO8FxcQqm9Q==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-header/2.3.1/da5242cd6ed43dcc0dfed24574d851c3762fd71d}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      '@rms-forge/ui-design-tokens': 3.0.0
+      '@rms-forge/ui-icons': 2.9.0(react@19.1.0)
+      '@rms-forge/ui-text': 2.4.1(react@19.1.0)
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-icons@2.9.0(react@19.1.0):
+    resolution: {integrity: sha512-Q+MJcsaofVzrXTwS+/NeK0rX4cKr9/Oh1zFT8YayyQp5S4zZ09A6fXxhtF3uRERBI9bKdT/DVlL34cHG84f09w==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-icons/2.9.0/b13a4d6f05b628c32e6bf4edda94cb2b0ecd1899}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-loader@2.2.0(react@19.1.0):
+    resolution: {integrity: sha512-TXbX4Cwc2fQGHWT0HCLfZ4SgieZT4pVuGJfLsGOfLzEjSvbRsUEYtwokC5ygRN+eq12yVKp2WAJ3ubW3ucyNHg==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-loader/2.2.0/b5624b932e8e17037ae49fd265b2ee770f774ab7}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-portal@2.3.0(react@19.1.0):
+    resolution: {integrity: sha512-kRXYLKPfAv8srqDhVfmhBMXoC+GE8B2931wc8+ofoiQvG7vRMebqM5x+56lhV+WhaN6/ehp/uQUEHyzkwnZCzA==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-portal/2.3.0/36eeff5247849798d669fd79363c5f5d48c42f5f}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+      react-dom: 18.3.1(react@19.1.0)
+    dev: false
+
+  /@rms-forge/ui-text@2.4.1(react@19.1.0):
+    resolution: {integrity: sha512-z1vLU5bJoG4zAZyqQSxWiLUfZgzBqlaWfikyo2VS+goXsQh0NS5JupBSGOxeLGPWrZTL3IpT+BFRU/1fZMGviw==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-text/2.4.1/02f051cece058fa04f996376de112b7b2a940efd}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-design-tokens': 3.0.0
+      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
+      classnames: 2.5.1
+      react: 19.1.0
+    dev: false
+
+  /@rms-forge/ui-toast@2.3.1(react@19.1.0):
+    resolution: {integrity: sha512-8s8GDQhTHtD57wTaYhGjDHarFnHBRyqDQHKxRpUE1i3/jdXbnX2ZyMCRgjvqzLV/3tvwEnih/3avY7C5ZbSMXQ==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui-toast/2.3.1/0d4b15ab6857b4993edd8b7272f5f4c77a079c12}
+    peerDependencies:
+      react: ^17.0.0 || ^18.2.0
+    dependencies:
+      '@rms-forge/ui-icons': 2.9.0(react@19.1.0)
       '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
       classnames: 2.5.1
       react: 19.1.0
@@ -1081,17 +1236,6 @@ packages:
     peerDependencies:
       react: ^17.0.0 || ^18.2.0
     dependencies:
-      react: 19.1.0
-    dev: false
-
-  /@rms-forge/ui@2.3.0(react@19.1.0):
-    resolution: {integrity: sha512-aVMsyk1NnTu7TS5AZqOwlQnEwJsFEe+uQxsZEAeUwbuk6zwI9RZWbmnbfeeWb40taaBaNOG03jTAd0UuTM6Skw==, tarball: https://npm.pkg.github.com/download/@rms-forge/ui/2.3.0/3ecc6c77422e945a8c66ad343f554beeddc69b3f}
-    peerDependencies:
-      react: ^17.0.0 || ^18.2.0
-    dependencies:
-      '@rms-forge/ui-design-tokens': 2.3.0
-      '@rms-forge/ui-text': 2.4.0(react@19.1.0)
-      '@rms-forge/ui-utils': 2.4.0(react@19.1.0)
       react: 19.1.0
     dev: false
 
@@ -1140,6 +1284,10 @@ packages:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  /@types/canvas-confetti@1.6.0:
+    resolution: {integrity: sha512-Yq6rIccwcco0TLD5SMUrIM7Fk7Fe/C0jmNRxJJCLtAF6gebDkPuUjK5EHedxecm69Pi/aA+It39Ux4OHmFhjRw==}
+    dev: false
 
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
@@ -1215,11 +1363,13 @@ packages:
       '@types/react': ^19.0.0
     dependencies:
       '@types/react': 19.1.1
+    dev: false
 
   /@types/react@19.1.1:
     resolution: {integrity: sha512-ePapxDL7qrgqSF67s0h9m412d9DbXyC1n59O2st+9rjuuamWsZuD2w55rqY12CbzsZ7uVXb5Nw0gEp9Z8MMutQ==}
     dependencies:
       csstype: 3.1.3
+    dev: false
 
   /@types/semver@7.7.0:
     resolution: {integrity: sha512-k107IF4+Xr7UHjwDc7Cfd6PRQfbdkiRabXGRjo07b4WyPahFBZCZ1sE+BNxYIJPPg73UkfOsVOLwqVc/6ETrIA==}
@@ -1939,6 +2089,10 @@ packages:
 
   /caniuse-lite@1.0.30001713:
     resolution: {integrity: sha512-wCIWIg+A4Xr7NfhTuHdX+/FKh3+Op3LBbSp2N5Pfx6T/LhdQy3GTyoTg48BReaW/MyMNZAkTadsBtai3ldWK0Q==}
+
+  /canvas-confetti@1.6.0:
+    resolution: {integrity: sha512-ej+w/m8Jzpv9Z7W7uJZer14Ke8P2ogsjg4ZMGIuq4iqUOqY2Jq8BNW42iGmNfRwREaaEfFIczLuZZiEVSYNHAA==}
+    dev: false
 
   /chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -4556,6 +4710,26 @@ packages:
       safe-buffer: 5.2.1
     dev: true
 
+  /react-canvas-confetti@1.4.0(react@19.1.0):
+    resolution: {integrity: sha512-ByBdSsNGUxlcJuOqSgbZw1VWNNO3b7njTmnuM1Y36mvwdCkCRs8rLkRAjn6MQK96LgWcfDVhr6ZT5olm2w8Zwg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      '@types/canvas-confetti': 1.6.0
+      canvas-confetti: 1.6.0
+      react: 19.1.0
+    dev: false
+
+  /react-dom@18.3.1(react@19.1.0):
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
+    peerDependencies:
+      react: ^18.3.1
+    dependencies:
+      loose-envify: 1.4.0
+      react: 19.1.0
+      scheduler: 0.23.2
+    dev: false
+
   /react-dom@19.1.0(react@19.1.0):
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
@@ -4836,6 +5010,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /scheduler@0.23.2:
+    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
 
   /scheduler@0.26.0:
     resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}

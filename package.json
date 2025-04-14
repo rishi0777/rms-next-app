@@ -16,9 +16,13 @@
     "check-all": "pnpm run type-check && pnpm run lint:js && pnpm run lint:css"
   },
   "dependencies": {
-    "@rms-forge/ui": "2.3.0",
-    "@rms-forge/ui-design-tokens": "2.3.0",
-    "@rms-forge/ui-text": "2.4.0",
+    "@rms-forge/ui-design-tokens": "3.0.0",
+    "@rms-forge/ui-footer": "2.5.2",
+    "@rms-forge/ui-form": "3.1.2",
+    "@rms-forge/ui-header": "2.3.1",
+    "@rms-forge/ui-icons": "2.9.0",
+    "@rms-forge/ui-text": "2.4.1",
+    "@rms-forge/ui-toast": "2.3.1",
     "@types/node": "^20.17.30",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",

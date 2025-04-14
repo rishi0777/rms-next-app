@@ -1,0 +1,70 @@
+/* stylelint-disable  function-url-quotes */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+@use '@rms-forge/ui-design-tokens/breakpoint' as b;
+
+@keyframes show-main-container {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  animation: 2s show-main-container ease-in-out;
+}
+
+.brand_text {
+  font-size: 1.7rem !important;
+}
+
+.brand_icon {
+  width: 36px;
+  height: 36px;
+}
+
+.children {
+  --margin-top: 20px;
+  --margin-bottom: 20px;
+  --header-height: 60px;
+  --footer-height: 310px;
+
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+  margin-top: calc(var(--header-height));
+
+  .main_child {
+    flex: 1;
+    display: flex;
+    padding: 0 var(--edge-padding);
+    flex-direction: column;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  }
+}
+
+@include b.breakpoint(mobile) {
+  .container {
+    --edge-padding: 20px;
+  }
+}
+
+@include b.breakpoint(desktop) {
+  .children {
+    --margin-top: 40px;
+    --margin-bottom: 40px;
+    --header-height: 80px;
+    --footer-height: 611px;
+  }
+}
+
+@include b.breakpoint(xxxlarge) {
+  .children {
+    --footer-height: 454px;
+  }
+}

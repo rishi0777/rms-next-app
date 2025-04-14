@@ -1,9 +1,8 @@
-// Use this file for api related task..Example
-const { TMDB_API_TOKEN } = process.env;
-export const BASE_URL = 'https://api.themoviedb.org/3';
+const { API_TOKEN } = process.env;
+const BASE_URL = `${process.env.NEXT_PUBLIC_BASE_URL}/api`;
 
 export const headers = {
-  Authorization: `Bearer ${TMDB_API_TOKEN}`,
+  Authorization: `Bearer ${API_TOKEN}`,
   accept: 'application/json',
 };
 
