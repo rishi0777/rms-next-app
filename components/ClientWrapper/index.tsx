@@ -1,9 +1,9 @@
 'use client';
 
-import cx from 'classnames';
+import React, { useRef } from 'react';
 import { Footer } from '@rms-forge/ui-footer';
 import { Header } from '@rms-forge/ui-header';
-import React, { useRef, useState } from 'react';
+import { Container } from '@rms-forge/ui-container';
 import { FormInnerFunctions } from '@rms-forge/ui-form';
 import { IconAlert, IconMail } from '@rms-forge/ui-icons';
 import { Toast, ToastProvider } from '@rms-forge/ui-toast';
@@ -93,7 +93,9 @@ const ClientWrapper = ({ children }: ClientWrapperProps) => {
       <ToastProvider ref={toast} />
 
       <div className={styles.children}>
-        <div className={styles.main_child}>{children}</div>
+        <Container className={styles.main_child} maxContainerWidth="1600px">
+          {children}
+        </Container>
       </div>
 
       <Footer

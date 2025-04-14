@@ -35,14 +35,11 @@
   --footer-height: 310px;
 
   display: flex;
-  margin: 0 auto;
-  max-width: 1600px;
   margin-top: calc(var(--header-height));
 
   .main_child {
     flex: 1;
     display: flex;
-    padding: 0 var(--edge-padding);
     flex-direction: column;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
   }

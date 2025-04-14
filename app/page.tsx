@@ -7,7 +7,7 @@ const Page = async () => {
 
   return (
     <ClientWrapper>
-      <Home data={appData} />
+      <Home appData={appData} />
     </ClientWrapper>
   );
 };

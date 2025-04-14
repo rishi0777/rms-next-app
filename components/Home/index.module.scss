@@ -1,3 +1,12 @@
-.margin {
-  margin: 2rem;
+.container {
+  gap: 2rem;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.grid {
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }

@@ -4,13 +4,21 @@ import { Text } from '@rms-forge/ui-text';
 
 import styles from './index.module.scss';
 
-const Home = (data: any) => {
-  console.log(data);
-
+const Home = ({ appData }: { appData: any[] }) => {
   return (
-    <Text color="white100" size="b1" className={styles.margin}>
-      Hiii {JSON.stringify(data)}
-    </Text>
+    <div className={styles.container}>
+      <Text color="white100" size="b1">
+        Header
+      </Text>
+
+      <div className={styles.grid}>
+        {(appData || []).map((app) => (
+          <Text key={app.id} color="white100">
+            {app.title}
+          </Text>
+        ))}
+      </div>
+    </div>
   );
 };
 

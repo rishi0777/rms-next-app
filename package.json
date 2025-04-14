@@ -16,6 +16,7 @@
     "check-all": "pnpm run type-check && pnpm run lint:js && pnpm run lint:css"
   },
   "dependencies": {
+    "@rms-forge/ui-container": "2.2.1",
     "@rms-forge/ui-design-tokens": "3.0.0",
     "@rms-forge/ui-footer": "2.5.2",
     "@rms-forge/ui-form": "3.1.2",

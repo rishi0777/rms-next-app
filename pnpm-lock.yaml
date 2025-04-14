@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@rms-forge/ui-container':
+    specifier: 2.2.1
+    version: 2.2.1(react@19.1.0)
   '@rms-forge/ui-design-tokens':
     specifier: 3.0.0
     version: 3.0.0
